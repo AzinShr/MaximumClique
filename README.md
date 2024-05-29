@@ -23,7 +23,8 @@ Steps:
 You can adjust the `num_nodes` and `edge_prob` variables to create different sizes and densities of random graphs. This code will generate a random graph each time it is run and find the maximum clique in that graph.
 
 ----------------
-maximum_clique(G, sampler=None, lagrange=2.0, **sampler_args)[source]
+maximum_clique(G, sampler=None, lagrange=2.0, **sampler_args)
+
 Returns an approximate maximum clique. A clique in an undirected graph, G = (V, E), is a subset of the vertex set such that for every two vertices in C, an edge exists connecting the two. This is equivalent to saying that the subgraph induced by C is complete (in some cases, the term clique may also refer to the subgraph). A maximum clique is one of the largest possible sizes in a given graph.
 
 This function works by finding the maximum independent set of the complement graph of the given graph G which is equivalent to finding the maximum clique. It defines a QUBO with ground states corresponding to a maximum weighted independent set and uses the sampler to sample from it.
