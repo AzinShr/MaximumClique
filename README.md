@@ -1,13 +1,13 @@
 # MaximumClique
  Maximal Clique Problem: Given a small graph with N nodes and E edges, the task is to find the maximum clique. A clique is a complete subgraph of a given graph. This means that all nodes in the subgraph are directly connected, or there is an edge between any two nodes. The maximal clique is the complete subgraph of a given graph which contains the maximum number of nodes.
  
-#Example:
+Example:
 
 Input: N = 4, edges= {{1, 2}, {2, 3}, {3, 1}, {4, 3}, {4, 1}, {4, 2}} 
 
 Output: 4
 
-#Steps:
+Steps:
 1. **Random Graph Creation**:
    - A random graph `G` is created using `networkx`'s , which generates a graph with `num_nodes` nodes and edges created with probability `edge_prob`.
 
